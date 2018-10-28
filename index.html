@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="/public/css/style.css" rel="stylesheet" />
+  <title>SQL Search</title>
+</head>
+<body>
+  <header>
+    <p>
+      Wpisz zapytanie: (<small>zamiast klauzuli <pre>LIMIT</pre> użyj suwaka, zamiast klauzuli
+      <pre>ORDER BY</pre> kliknij na nagłówek utworzonej tabeli)</small>
+    </p>
+    <pre>SELECT</pre>
+    <form style="display:inline" action="/search" id="query-form" method="post">
+      <input type="text" style="width: 50%; outline: 0" name="query" autocomplete="off" id="query-input">
+      <input type="submit" value="Query" style="padding:5px;"><br>
+      <label for="limit">limit:
+        <input type="number" name="limit" id="limit-input" value="10" style="width: 4em;">
+      </label>
+
+    </form>
+    <p id="message"></p>
+  </header>
+
+  <div id="table-queries">
+    <p>Tabele w bazie "sakila":</p>
+  </div>
+  <hr>
+  <div id="saved-queries">
+    <p>Zapisane zapytania(kliknij w tytuł tabeli, aby zapisać zapytanie):</p>
+  </div>
+
+<div id="container">
+
+</div>
+
+  <script src="/public/js/SqlTable.js" charset="utf-8"></script>
+  <script src="/public/js/main.js" charset="utf-8"></script>
+
+</body>
+</html>

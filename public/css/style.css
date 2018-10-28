@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 10px;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: monospace;
+    margin: auto;
+}
+
+h1 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+pre {
+  display: inline;
+}
+
+a {
+    color: #00B7FF;
+}
+
+table, th, td {
+   border: 1px solid black;
+   padding: 2px;
+}
+
+button {
+  padding: .5em;
+}
+
+.display-table {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 15px;
+}
+
+.display-table caption:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.display-table .close-button {
+  width: 100%;
+}
+
+.display-table th {
+  color: blue;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.display-table th:hover {
+  color: red;
+}
+
+.display-table tr {
+  border-bottom: solid 1px black;
+}
+
+.delete-button {
+  background-color: #d4d4d4;
+}
+.query-button-span {
+  display: inline-block;
+  margin: 5px;
+}
+
+#message {
+  padding: 15px;
+  color: #525252;
+  font-style: italic;
+}
